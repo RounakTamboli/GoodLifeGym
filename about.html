@@ -1,74 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | GoodLifeGym</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Good Life Gym</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- NAVBAR (Same as index.html) -->
-    <nav>
-        <div class="logo">GoodLifeGym</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <a href="index.html" class="logo">Good<span>Life</span>Gym</a>
+        <nav id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="price.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="hamburger">&#9776;</button>
+    </header>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <h2>Our Story</h2>
-        <p>Founded in 2019, GoodLifeGym is dedicated to helping you achieve your fitness goals.</p>
-        
-        <h2>Meet Our Trainers</h2>
-        <div class="trainers">
-            <div class="trainer-card">
-                <img src="Trainer1.jpg" alt="Trainer Wasim">
-                <h3>Wasim Shaikh</h3>
-                <p>Strength Training Expert</p>
-            </div>
-            <div class="trainer-card">
-                <img src="Trainer2.jpg" alt="Trainer Mayur">
-                <h3>Mayur Shertate</h3>
-                <p>Fitness Trainer</p>
-            </div>
-            <div class="trainer-card">
-                <img src="Trainer3.jpg" alt="Trainer Yash">
-                <h3>Yash Shreds</h3>
-                <p>Fitness Trainer</p>
-            </div>
-            <div class="trainer-card">
-                <img src="Trainer4.jpg" alt="Trainer Manashri">
-                <h3>Manashri Chavan</h3>
-                <p>Yoga Trainer </p>
-            </div>
-        </div>
+    <section class="page-banner about-banner">
+        <h1>About Us</h1>
     </section>
 
-    <!-- Add this at the BOTTOM of your page -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>GoodLife Gym</h3>
-            <p>Laxmi Vihar, Govind Nagar, Near New Era School, Nashik - 422010</p>
-        </div>
-        <div class="footer-section">
-            <h3>Timings</h3>
-            <p>Morning: 5:30 AM - 12 PM</p>
-            <p>Evening: 4 PM - 10 PM</p>
-            <p>Sunday: Closed</p>
-        </div>
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>9604378521, 9850728046</p>
-            <p>Email: goodlifegym@example.com</p>
-        </div>
-    </div>
-</footer>
+    <section class="page-content wrapper">
+        <h2>Our Story</h2>
+        <p>Founded in 2016 in the heart of Govind Nagar, Nashik, Good Life Gym was built on one simple goal: 
+           to create a friendly, judgement‑free environment where every body feels empowered to train. 
+           Whether you’re a total beginner or a seasoned athlete, our certified trainers and modern facilities 
+           provide everything you need to transform your body, boost your confidence and live a healthier life.</p>
 
-<script src="script.js"></script>
+        <h2>Mission &amp; Values</h2>
+        <ul>
+            <li><strong>Inclusivity:</strong> A safe space for all genders, ages and fitness levels.</li>
+            <li><strong>Professionalism:</strong> Guidance from qualified trainers with science‑backed methods.</li>
+            <li><strong>Community:</strong> We sweat together, motivate each other and celebrate every win.</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Good Life Gym. All rights reserved.</p>
+    </footer>
 </body>
 </html>

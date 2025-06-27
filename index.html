@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodLifeGym | Build Your Strength</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Life Gym | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">GoodLifeGym</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <a href="index.html" class="logo">Good<span>Life</span>Gym</a>
+        <nav id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="price.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="hamburger">&#9776;</button>
+    </header>
 
-    <!-- HERO SECTION -->
     <section class="hero">
-        <h1>Transform Your Body</h1>
-        <p>Join the best gym in town with expert trainers.</p>
-        <a href="#price" class="cta-button">View Plans</a>
+        <div class="hero-content">
+            <h1>Transform Your Body &amp; Mind</h1>
+            <p>Nashik’s premier unisex fitness destination</p>
+            <a href="price.html" class="btn">View Memberships</a>
+        </div>
     </section>
 
-    <!-- Add this at the BOTTOM of your page -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>GoodLife Gym</h3>
-            <p>Laxmi Vihar, Govind Nagar, Near New Era School, Nashik - 422010</p>
+    <section class="features">
+        <div class="feature-card">
+            <h3>Gym &amp; Cardio</h3>
+            <p>Fully‑equipped strength & cardio zones for all fitness levels.</p>
         </div>
-        <div class="footer-section">
-            <h3>Timings</h3> 
-            <p>Morning: 5:30 AM - 12 PM</p>
-            <p>Evening: 4 PM - 10 PM</p>
-            <p>Sunday: Closed</p>
+        <div class="feature-card">
+            <h3>Personal Training</h3>
+            <p>Certified trainers crafting bespoke workout plans to hit your goals faster.</p>
         </div>
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>9604378521, 9850728046</p>
-            <p>Email: goodlifegym@example.com</p>
+        <div class="feature-card">
+            <h3>Steam &amp; Recovery</h3>
+            <p>Relax, recover and rejuvenate with our on‑site steam room.</p>
         </div>
-    </div>
-</footer>
+    </section>
 
- <script src="script.js"></script>
+    <footer class="footer">
+        <p>&copy; 2025 Good Life Gym. All rights reserved.</p>
+    </footer>
 </body>
 </html>

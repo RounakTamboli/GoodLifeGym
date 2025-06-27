@@ -1,110 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodLifeGym | Build Your Strength</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing | Good Life Gym</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">GoodLifeGym</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <a href="index.html" class="logo">Good<span>Life</span>Gym</a>
+        <nav id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="price.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="hamburger">&#9776;</button>
+    </header>
 
-<!-- Insert this BELOW the "Services" section in index.html -->
-<section class="pricing">
-    <h2>Membership Plans</h2>
-    <div class="pricing-tables">
-        <!-- Standard Gym Membership -->
-        <div class="pricing-table">
-            <h3>Gym + Cardio</h3>
-            <table>
-                <tr>
-                    <th>Package</th>
-                    <th>Fees</th>
-                </tr>
-                <tr>
-                    <td>1 Year</td>
-                    <td>₹16,000/-</td>
-                </tr>
-                <tr>
-                    <td>6 Months</td>
-                    <td>₹9,000/-</td>
-                </tr>
-                <tr>
-                    <td>3 Months</td>
-                    <td>₹6,000/-</td>
-                </tr>
-                <tr>
-                    <td>1 Month</td>
-                    <td>₹2,500/-</td>
-                </tr>
-            </table>
-        </div>
+    <section class="page-banner price-banner">
+        <h1>Membership Plans</h1>
+    </section>
 
-        <!-- Personal Training -->
-        <div class="pricing-table">
-            <h3>Personal Training</h3>
-            <table>
-                <tr>
-                    <th>Package</th>
-                    <th>Fees</th>
-                </tr>
-                <tr>
-                    <td>3 Months</td>
-                    <td>₹24,000/-</td>
-                </tr>
-                <tr>
-                    <td>1 Month</td>
-                    <td>₹9,000/-</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+    <section class="pricing wrapper">
+        <h2>Gym + Cardio</h2>
+        <table class="price-table">
+            <thead>
+                <tr><th>Duration</th><th>Fees (INR)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1 Month</td><td>2,500</td></tr>
+                <tr><td>3 Months</td><td>6,000</td></tr>
+                <tr><td>6 Months</td><td>9,000</td></tr>
+                <tr><td>1 Year</td><td>16,000</td></tr>
+            </tbody>
+        </table>
 
-    <!-- Additional Services -->
-    <div class="extras">
-        <div class="extra">
-            <h4>Steam (1 Sitting)</h4>
-            <p>₹300/-</p>
-        </div>
-        <div class="extra">
-            <h4>Diet Plan</h4>
-            <p>₹1,200/-</p>
-        </div>
-        <div class="extra">
-            <h4>3-Day Trial</h4>
-            <p>₹500/-</p>
-        </div>
-    </div>
-</section>
-<!-- Add this at the BOTTOM of your page -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>GoodLife Gym</h3>
-            <p>Laxmi Vihar, Govind Nagar, Near New Era School, Nashik - 422010</p>
-        </div>
-        <div class="footer-section">
-            <h3>Timings</h3>
-            <p>Morning: 5:30 AM - 12 PM</p>
-            <p>Evening: 4 PM - 10 PM</p>
-            <p>Sunday: Closed</p>
-        </div>
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>9604378521, 9850728046</p>
-            <p>Email: goodlifegym@example.com</p>
-        </div>
-    </div>
-</footer>
-<script src="script.js"></script>
-</body>   
+        <h2>Personal Training</h2>
+        <table class="price-table">
+            <thead>
+                <tr><th>Duration</th><th>Fees (INR)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1 Month</td><td>9,000</td></tr>
+                <tr><td>3 Months</td><td>24,000</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Add‑On Services</h2>
+        <table class="price-table">
+            <thead>
+                <tr><th>Service</th><th>Fees (INR)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Steam (1 Sitting)</td><td>300</td></tr>
+                <tr><td>Diet Consultation</td><td>1,200</td></tr>
+                <tr><td>3‑Day Trial</td><td>500</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Good Life Gym. All rights reserved.</p>
+    </footer>
+</body>
 </html>
