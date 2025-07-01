@@ -75,7 +75,7 @@ h1, h2, h3 {
 /* ===== Hero ===== */
 .hero {
   height: 70vh;
-  background: url('https://images.unsplash.com/photo-1517960413843-0aee8e2d76cd?auto=format&fit=crop&w=1365&q=80') center/cover no-repeat;
+  background: url('images/hero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,10 +134,10 @@ h1, h2, h3 {
   background-position: center;
 }
 
-.about-banner { background-image: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1367&q=80'); }
-.service-banner { background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1367&q=80'); }
-.price-banner { background-image: url('https://images.unsplash.com/photo-1583454151187-7427d4ff1a57?auto=format&fit=crop&w=1367&q=80'); }
-.contact-banner { background-image: url('https://images.unsplash.com/photo-1560457079-9a6532ccb118?auto=format&fit=crop&w=1367&q=80'); }
+.about-banner { background-image: url('images/hero.jpg'); }
+.service-banner { background-image: url('images/hero.jpg'); }
+.price-banner { background-image: url('images/hero.jpg'); }
+.contact-banner { background-image: url('images/hero.jpg'); }
 
 /* ===== Services & Pricing ===== */
 .services, .pricing {
@@ -145,10 +145,22 @@ h1, h2, h3 {
 }
 
 .service {
-  background: black;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
   padding: 1.5rem;
-  margin-bottom: 1rem;
-  border-left: 6px solid var(--primary);
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.service img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -207,6 +219,18 @@ h1, h2, h3 {
   color: green;
 }
 
+/* ===== Gallery ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 /* ===== Footer ===== */
 .footer {
   background: #fff;
@@ -218,6 +242,11 @@ h1, h2, h3 {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .service {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
   #nav-links {
     position: absolute;
     right: 0;
@@ -230,11 +259,9 @@ h1, h2, h3 {
     display: none;
     box-shadow: 0 2px 6px rgba(0,0,0,.05);
   }
-
   #nav-links.show {
     display: flex;
   }
-
   #hamburger {
     display: block;
   }
