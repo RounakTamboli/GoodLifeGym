@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services | Good Life Gym</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="navbar">
-    <a href="index.html" class="logo-img"><img src="images/logo.jpeg" alt="Good Life Gym Logo"></a>
+    <a href="index.html" class="logo-img"><img src="images/logo.jpeg" alt="Good Life Gym"/></a>
     <nav id="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="service.html">Services</a>
+      <a href="price.html">Pricing</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button id="hamburger">&#9776;</button>
+    <button id="hamburger">☰</button>
   </header>
 
   <section class="page-banner service-banner">
     <h1>Our Services</h1>
   </section>
 
+  <!-- Services Carousel -->
   <section class="services wrapper">
-    <article class="service">
-      <img src="images/strength.jpg" class="service-img" alt="Strength Training">
-      <h3>Strength Training Zone</h3>
-      <p>Top‑of‑the‑line free weights and resistance machines to build muscle and increase endurance.</p>
-    </article>
-    <article class="service">
-      <img src="images/cardio.jpg" class="service-img" alt="Cardio Theatre">
-      <h3>Cardio Theatre</h3>
-      <p>Dozens of treadmills, ellipticals, bikes and rowers equipped with touch‑screen entertainment.</p>
-    </article>
-    <article class="service">
-      <img src="images/personal.jpg" class="service-img" alt="Personal Training">
-      <h3>Personal Training</h3>
-      <p>One‑on‑one coaching, workout periodisation and nutrition tracking with experienced fitness coaches.</p>
-    </article>
-    <article class="service">
-      <img src="images/steam.jpg" class="service-img" alt="Steam & Recovery">
-      <h3>Steam &amp; Recovery</h3>
-      <p>Unwind post‑workout in our steam room to aid muscle recovery and stress relief.</p>
-    </article>
-    <article class="service">
-      <img src="images/diet.jpg" class="service-img" alt="Diet Programs">
-      <h3>Diet Programs</h3>
-      <p>Tailored meal plans and continuous diet support to accelerate your transformation journey.</p>
-    </article>
+    <div class="carousel-container">
+      <div class="carousel" id="services-carousel">
+        <!-- Slide 1 -->
+        <article class="service-card">
+          <img src="images/cardio.jpg" alt="Cardio Theatre">
+          <h3>Cardio Theatre</h3>
+          <p>Treadmills, bikes, rowers with entertainment screens.</p>
+          <a href="#learn-more" class="btn btn-small">Learn More</a>
+        </article>
+        <!-- Slide 2 -->
+        <article class="service-card">
+          <img src="images/strength.jpg" alt="Strength Zone">
+          <h3>Strength Training Zone</h3>
+          <p>Free weights & machines for power and endurance.</p>
+          <a href="#learn-more" class="btn btn-small">Learn More</a>
+        </article>
+        <!-- Slide 3 -->
+        <article class="service-card">
+          <img src="images/personal.jpg" alt="Personal Training">
+          <h3>Personal Training</h3>
+          <p>1:1 coaching, periodisation & progress tracking.</p>
+          <a href="#learn-more" class="btn btn-small">Learn More</a>
+        </article>
+        <!-- Slide 4 -->
+        <article class="service-card">
+          <img src="images/steam.jpg" alt="Steam & Recovery">
+          <h3>Steam & Recovery</h3>
+          <p>Relax and aid muscle recovery post-workout.</p>
+          <a href="#learn-more" class="btn btn-small">Learn More</a>
+        </article>
+        <!-- Slide 5 -->
+        <article class="service-card">
+          <img src="images/diet.jpg" alt="Diet Programs">
+          <h3>Diet Programs</h3>
+          <p>Tailored plans to support your transformation.</p>
+          <a href="#learn-more" class="btn btn-small">Learn More</a>
+        </article>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-btn prev" data-target="#services-carousel">❮</button>
+      <button class="carousel-btn next" data-target="#services-carousel">❯</button>
+
+      <!-- Dots -->
+      <div class="carousel-dots" id="services-dots"></div>
+    </div>
   </section>
 
+  <!-- Mini Gallery specific to services -->
   <section class="gallery wrapper">
-    <h2>Our Gallery</h2>
+    <h2>Service Gallery</h2>
     <div class="gallery-grid">
-      <img src="images/outside.jpg" alt="Outside View of Gym">
-      <img src="images/reception.jpg" alt="Gym Reception">
       <img src="images/cardio_gym.jpg" alt="Members doing cardio">
+      <img src="images/reception.jpg" alt="Reception">
+      <img src="images/outside.jpg" alt="Outside View">
       <img src="images/personal.jpg" alt="Trainer guiding member">
-      <img src="images/gallery1.jpg" alt="Gym view">
     </div>
   </section>
 
