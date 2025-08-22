@@ -1,35 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - GoodLife Gym</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | GoodLife Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="GoodLife Gym Logo">
-    <nav>
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="GoodLife Gym Logo" />
+      <span>GoodLife Gym</span>
+    </a>
+    <nav id="nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="service.html">Services</a>
+      <a href="service.html" class="active">Services</a>
       <a href="price.html">Pricing</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="navToggle" class="hamburger" aria-label="Toggle menu">☰</button>
   </header>
 
-  <main>
-    <h1>Our Services</h1>
-    <ul>
-      <li>Personal Training</li>
-      <li>Yoga & Meditation</li>
-      <li>Strength Training</li>
-      <li>Cardio Programs</li>
-    </ul>
-  </main>
+  <section class="page-hero" style="--hero:url('images/services-hero.jpg')">
+    <div class="container">
+      <h1>Our Services</h1>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 GoodLife Gym. All Rights Reserved.</p>
+  <section class="section container">
+    <div class="grid grid--3">
+      <article class="card">
+        <h3>Strength Training Zone</h3>
+        <p>Free weights, racks, cables, and machines for every level.</p>
+      </article>
+      <article class="card">
+        <h3>Cardio Theatre</h3>
+        <p>Treadmills, bikes, rowers, and ellipticals with entertainment screens.</p>
+      </article>
+      <article class="card">
+        <h3>Personal Training</h3>
+        <p>1-on-1 coaching, periodisation, and progress tracking.</p>
+      </article>
+      <article class="card">
+        <h3>Steam & Recovery</h3>
+        <p>Unwind post-workout to aid muscle recovery and reduce stress.</p>
+      </article>
+      <article class="card">
+        <h3>Diet Programs</h3>
+        <p>Simple, sustainable meal plans with continuous support.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Carousel (simple, no library) -->
+  <section class="section section--muted">
+    <div class="container">
+      <h2 class="section__title">Facility Highlights</h2>
+      <div class="carousel" data-carousel>
+        <button class="carousel__btn prev" data-carousel-prev aria-label="Previous">‹</button>
+
+        <div class="carousel__track" data-carousel-track>
+          <!-- Replace these image filenames with yours -->
+          <img src="images/highlight1.jpg" alt="Gym view" class="carousel__slide" />
+          <img src="images/highlight2.jpg" alt="Trainer coaching" class="carousel__slide" />
+          <img src="images/highlight3.jpg" alt="Members doing cardio" class="carousel__slide" />
+          <img src="images/highlight4.jpg" alt="Reception / entry" class="carousel__slide" />
+        </div>
+
+        <button class="carousel__btn next" data-carousel-next aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Static gallery (optional extra images) -->
+  <section class="section container">
+    <h2 class="section__title">Gallery</h2>
+    <div class="gallery">
+      <img src="images/gallery1.jpg" alt="Gym area" />
+      <img src="images/gallery2.jpg" alt="Coach with client" />
+      <img src="images/gallery3.jpg" alt="Group workout" />
+      <img src="images/gallery4.jpg" alt="Outside view" />
+      <img src="images/gallery5.jpg" alt="Reception" />
+      <img src="images/gallery6.jpg" alt="Cardio zone" />
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> GoodLife Gym. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

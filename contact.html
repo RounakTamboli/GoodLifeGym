@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - GoodLife Gym</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | GoodLife Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="GoodLife Gym Logo">
-    <nav>
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="GoodLife Gym Logo" />
+      <span>GoodLife Gym</span>
+    </a>
+    <nav id="nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="service.html">Services</a>
       <a href="price.html">Pricing</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
+    <button id="navToggle" class="hamburger" aria-label="Toggle menu">☰</button>
   </header>
 
-  <main>
-    <h1>Contact Us</h1>
-    <form onsubmit="return validateForm()">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br>
+  <section class="page-hero" style="--hero:url('images/contact-hero.jpg')">
+    <div class="container">
+      <h1>Get in Touch</h1>
+    </div>
+  </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
+  <section class="section container grid grid--2">
+    <div class="card">
+      <h3>Visit Us</h3>
+      <p>Laxmi Vihar, Govind Nagar, Near New Era School<br/>Nashik, Maharashtra 422010</p>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea><br>
+      <h3>Call</h3>
+      <p><a href="tel:+919604378521">+91 96043 78521</a><br /><a href="tel:+919850728046">+91 98507 28046</a></p>
 
-      <button type="submit">Send</button>
+      <h3>Email</h3>
+      <p><a href="mailto:hello@goodlifegym.com">hello@goodlifegym.com</a></p>
+
+      <h3>Timings</h3>
+      <p>Mon–Sat: 5:30am–12pm & 4pm–10pm<br/>Sunday: Closed</p>
+    </div>
+
+    <form id="contactForm" class="card form">
+      <h3>Send a Message</h3>
+      <label>Name</label>
+      <input type="text" id="name" required />
+      <label>Email</label>
+      <input type="email" id="email" required />
+      <label>Message</label>
+      <textarea id="message" rows="5" required></textarea>
+      <button class="btn btn--primary" type="submit">Submit</button>
+      <p id="formMsg" class="form__msg"></p>
     </form>
-  </main>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 GoodLife Gym. All Rights Reserved.</p>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> GoodLife Gym. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

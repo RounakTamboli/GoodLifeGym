@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pricing - GoodLife Gym</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing | GoodLife Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="GoodLife Gym Logo">
-    <nav>
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="GoodLife Gym Logo" />
+      <span>GoodLife Gym</span>
+    </a>
+    <nav id="nav" class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="service.html">Services</a>
-      <a href="price.html">Pricing</a>
+      <a href="price.html" class="active">Pricing</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="navToggle" class="hamburger" aria-label="Toggle menu">☰</button>
   </header>
 
-  <main>
-    <h1>Pricing Plans</h1>
-    <ul>
-      <li>Basic Plan - $20/month</li>
-      <li>Standard Plan - $35/month</li>
-      <li>Premium Plan - $50/month</li>
-    </ul>
-  </main>
+  <section class="page-hero" style="--hero:url('images/pricing-hero.jpg')">
+    <div class="container">
+      <h1>Membership Plans</h1>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 GoodLife Gym. All Rights Reserved.</p>
+  <section class="section container">
+    <h2 class="section__title">Gym + Cardio</h2>
+    <table class="table">
+      <thead><tr><th>Duration</th><th>Fees (INR)</th></tr></thead>
+      <tbody>
+        <tr><td>1 Month</td><td>2,500</td></tr>
+        <tr><td>3 Months</td><td>6,000</td></tr>
+        <tr><td>6 Months</td><td>9,000</td></tr>
+        <tr><td>1 Year</td><td>16,000</td></tr>
+      </tbody>
+    </table>
+
+    <h2 class="section__title">Personal Training</h2>
+    <table class="table">
+      <thead><tr><th>Duration</th><th>Fees (INR)</th></tr></thead>
+      <tbody>
+        <tr><td>1 Month</td><td>9,000</td></tr>
+        <tr><td>3 Months</td><td>24,000</td></tr>
+      </tbody>
+    </table>
+
+    <h2 class="section__title">Add-On Services</h2>
+    <table class="table">
+      <thead><tr><th>Service</th><th>Fees (INR)</th></tr></thead>
+      <tbody>
+        <tr><td>Steam (1 Sitting)</td><td>300</td></tr>
+        <tr><td>Diet Consultation</td><td>1,200</td></tr>
+        <tr><td>3-Day Trial</td><td>500</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> GoodLife Gym. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

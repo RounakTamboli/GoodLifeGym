@@ -1,32 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GoodLife Gym</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GoodLife Gym | Home</title>
+
+  <!-- SEO -->
+  <meta name="description" content="GoodLife Gym – Transform your body and mind with modern equipment, cardio theatre, and expert trainers in Nashik." />
+
+  <!-- Styles & Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="GoodLife Gym Logo">
-    <nav>
-      <a href="index.html">Home</a>
+  <!-- ====== Header / Navbar ====== -->
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="GoodLife Gym Logo" />
+      <span>GoodLife Gym</span>
+    </a>
+
+    <nav id="nav" class="nav-links">
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="service.html">Services</a>
       <a href="price.html">Pricing</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="navToggle" class="hamburger" aria-label="Toggle menu">☰</button>
   </header>
 
+  <!-- ====== Hero ====== -->
   <main>
     <h1>Welcome to GoodLife Gym</h1>
     <p>Transform your body, transform your life.</p>
     <!-- Change the image below by replacing workout.jpg with your desired image inside images/ folder -->
-    <img src="images/workout.jpg" alt="Workout">
+    <img src="images/banner1.jpg" alt="Workout">
   </main>
 
-  <footer>
-    <p>&copy; 2025 GoodLife Gym. All Rights Reserved.</p>
+  <!-- ====== Features ====== -->
+  <section class="section container">
+    <h2 class="section__title">Why Train With Us</h2>
+    <div class="grid grid--3">
+      <article class="card">
+        <h3>Strength & Cardio</h3>
+        <p>Modern free weights and resistance machines, plus a full cardio theatre.</p>
+      </article>
+      <article class="card">
+        <h3>Expert Trainers</h3>
+        <p>Certified coaches who build programs tailored to your goals.</p>
+      </article>
+      <article class="card">
+        <h3>Steam & Recovery</h3>
+        <p>Recover faster with on-site steam room and guided mobility drills.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== Transform Section with images ====== -->
+  <section class="section section--muted">
+    <div class="container">
+      <h2 class="section__title">Transform Your Body and Mind</h2>
+      <p class="section__lead">Consistent training, smart nutrition, and community support — that’s our formula.</p>
+
+      <div class="gallery gallery--row">
+        <!-- Replace these file names with yours -->
+        <img src="images/body1.jpg" alt="Strength workout" />
+        <img src="images/body2.jpg" alt="Yoga / mobility" />
+        <img src="images/body3.jpg" alt="Cardio session" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> GoodLife Gym. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

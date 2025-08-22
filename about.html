@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - GoodLife Gym</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | GoodLife Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="GoodLife Gym Logo">
-    <nav>
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="GoodLife Gym Logo" />
+      <span>GoodLife Gym</span>
+    </a>
+    <nav id="nav" class="nav-links">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="service.html">Services</a>
       <a href="price.html">Pricing</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="navToggle" class="hamburger" aria-label="Toggle menu">☰</button>
   </header>
 
-  <main>
-    <h1>About Us</h1>
-    <p>GoodLife Gym is dedicated to helping you reach your fitness goals with expert trainers and modern equipment.</p>
-  </main>
+  <section class="page-hero" style="--hero:url('images/about-hero.jpg')">
+    <div class="container">
+      <h1>About Us</h1>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 GoodLife Gym. All Rights Reserved.</p>
+  <section class="section container">
+    <div class="stack">
+      <p>
+        Founded in 2016 in Govind Nagar, Nashik, GoodLife Gym exists to help everyday
+        people build strength, confidence, and lasting healthy habits.
+      </p>
+      <ul class="list">
+        <li><strong>Inclusive:</strong> Welcoming for all ages and fitness levels.</li>
+        <li><strong>Professional:</strong> Science-based coaching and programming.</li>
+        <li><strong>Community:</strong> We train, support, and celebrate together.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> GoodLife Gym. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
