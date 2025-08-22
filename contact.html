@@ -5,35 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - GoodLife Gym</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
+  <header>
+    <img src="images/logo.png" alt="GoodLife Gym Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="price.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <img src="images/logo.png" alt="GoodLife Gym Logo" class="logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="service.html">Services</a>
-    <a href="price.html">Pricing</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <main>
+    <h1>Contact Us</h1>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
 
-<section>
-  <h1>Contact Us</h1>
-  <p>Email: info@goodlifegym.com</p>
-  <p>Phone: +91 9876543210</p>
-  <form>
-    <input type="text" placeholder="Your Name"><br><br>
-    <input type="email" placeholder="Your Email"><br><br>
-    <textarea placeholder="Your Message"></textarea><br><br>
-    <button type="submit">Send</button>
-  </form>
-</section>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
 
-<footer>
-  <p>&copy; 2025 GoodLife Gym. All Rights Reserved.</p>
-</footer>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea><br>
 
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GoodLife Gym. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
